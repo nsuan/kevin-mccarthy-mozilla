@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Speaker reject Kevin McCarthy ",
+	"version": "14",
+	"description": "Replaces the text 'Kevin McCarthy' with X-time speaker reject Kevin McCarthy, where X is the number of times they've failed at voting for him",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
