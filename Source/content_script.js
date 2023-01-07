@@ -38,11 +38,11 @@ function walk(node)
 function handleText(textNode) 
 {
 	var v = textNode.nodeValue;
-
-	v = v.replace(/\bThe Cloud\b/g, "My Butt");
-	v = v.replace(/\bThe cloud\b/g, "My butt");
-	v = v.replace(/\bthe Cloud\b/g, "my Butt");
-	v = v.replace(/\bthe cloud\b/g, "my butt");
+    //Kevin McCarthy
+	v = v.replace(/\bKevin McCarthy\b/g, "14-time speaker reject Kevin McCarthy");
+	v = v.replace(/\bkevin McCarthy\b/g, "14-time speaker reject kevin McCarthy");
+	v = v.replace(/\bkevin mcCarthy\b/g, "14-time speaker reject kevin mcCarthy");
+	v = v.replace(/\bkevin mccarthy\b/g, "14-time speaker reject kevin mccarthy");
 	
 	textNode.nodeValue = v;
 }
